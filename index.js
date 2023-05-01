@@ -37,6 +37,10 @@ console.log(matrix[2]);
 
 // array methods
 
-matrix[3].push("hello");
+matrix.push("hello");
 console.log(matrix);
 console.log(matrix.length);
+
+console.log(matrix.pop());
+console.log(matrix);
+
