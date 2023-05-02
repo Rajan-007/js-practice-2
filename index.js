@@ -57,7 +57,7 @@ console.log(arr);
 console.log(arr.unshift('a'));
 console.log(arr);
 
-// splice
+// splice (position,no of elements selected , changing values)
 
 arr.splice(2,1);
 console.log(arr);
@@ -79,3 +79,23 @@ console.log(arr);
 
 arr.splice(2,1);
 console.log(arr);
+
+// Slice (starting index , ending index)
+
+console.log(arr.slice(1,2));
+console.log(arr.slice(1));
+
+// reverse
+ 
+arr.reverse();
+console.log(arr);
+
+// join (convert array to string)
+
+let str = arr.join();
+console.log(str);
+
+// split ( convert string to array )
+let Str2="abc,gre,hf,u,dh";
+let array = Str2.split();
+console.log(array);
