@@ -96,6 +96,21 @@ let str = arr.join();
 console.log(str);
 
 // split ( convert string to array )
-let Str2="abc,gre,hf,u,dh";
+
+let Str2="abc,gre,hf,'d',dh";
 let array = Str2.split();
 console.log(array);
+
+// concat & spread operator
+
+let arr1 = [1,2,3];
+let arr2 = [4,5,6];
+
+let joinedArr = [arr1,arr2];
+console.log(joinedArr)
+
+joinedArr = arr1.concat(arr2);
+console.log(joinedArr);
+
+let Joined = [...arr1,...arr2];
+console.log(Joined);
