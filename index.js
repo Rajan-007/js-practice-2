@@ -41,6 +41,41 @@ matrix.push("hello");
 console.log(matrix);
 console.log(matrix.length);
 
+// push
+console.log(matrix.push('222'));
+console.log(matrix);
+
+// pop
 console.log(matrix.pop());
 console.log(matrix);
 
+// shift
+console.log(arr.shift());
+console.log(arr);
+
+// unshift
+console.log(arr.unshift('a'));
+console.log(arr);
+
+// splice
+
+arr.splice(2,1);
+console.log(arr);
+
+arr.splice(3,1);
+console.log(arr);
+
+arr.splice(2);
+console.log(arr);
+
+arr.splice(0,1,'Rajan');
+console.log(arr);
+
+arr.splice(1,1,"Rahul",'Ravi');
+console.log(arr);
+
+arr.splice(2,0,'Wely','george');
+console.log(arr);
+
+arr.splice(2,1);
+console.log(arr);
