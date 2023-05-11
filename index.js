@@ -1,3 +1,4 @@
+/*
 // Template literals
 
 let firstname = "Aravinth";
@@ -114,3 +115,25 @@ console.log(joinedArr);
 
 let Joined = [...arr1,...arr2];
 console.log(Joined);
+
+*/
+// Objects
+
+let User ={
+    name : "Rajan",
+    Email:"rajan@gmail.com",
+    password : "kumaar&&3",
+    Login : function(){
+        console.log("You were logged in")
+    }
+}
+
+console.log(User);
+console.log(User.name);
+
+User.name = "raj";
+console.log(User.name)
+
+console.log(User);
+
+User.Login()
