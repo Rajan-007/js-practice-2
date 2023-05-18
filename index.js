@@ -119,21 +119,50 @@ console.log(Joined);
 */
 // Objects
 
-let User ={
-    name : "Rajan",
-    Email:"rajan@gmail.com",
-    password : "kumaar&&3",
-    Login : function(){
-        console.log("You were logged in")
+// let User ={
+//     name : "Rajan",
+//     Email:"rajan@gmail.com",
+//     password : "kumaar&&3",
+//     Login : function(){
+//         console.log("You were logged in")
+//     }
+// }
+
+// console.log(User);
+// console.log(User.name);
+
+// User.name = "raj";
+// console.log(User.name)
+
+// console.log(User);
+
+// User.Login()
+
+// closure
+
+function outer(){
+    let outervar = "sweet"
+    function inner(){
+        let innervar = "salt"  
+        console.log(innervar)
+        console.log(outervar)
+
+    }
+    return inner
+}
+
+let call = outer();
+call()
+
+
+function doAdd(x){
+    return function add(y){
+        return x+y
     }
 }
 
-console.log(User);
-console.log(User.name);
+let add5= doAdd(5);
+console.log(add5(50))
 
-User.name = "raj";
-console.log(User.name)
-
-console.log(User);
-
-User.Login()
+let add50= doAdd(50);
+console.log(add50(50))
