@@ -116,7 +116,6 @@ console.log(joinedArr);
 let Joined = [...arr1,...arr2];
 console.log(Joined);
 
-*/
 // Objects
 
 // let User ={
@@ -140,29 +139,51 @@ console.log(Joined);
 
 // closure
 
-function outer(){
-    let outervar = "sweet"
-    function inner(){
-        let innervar = "salt"  
-        console.log(innervar)
-        console.log(outervar)
+// function outer(){
+//     let outervar = "sweet"
+//     function inner(){
+//         let innervar = "salt"  
+//         console.log(innervar)
+//         console.log(outervar)
 
-    }
-    return inner
-}
+//     }
+//     return inner
+// }
 
-let call = outer();
-call()
+// let call = outer();
+// call()
 
+// function doAdd(x){
+//     return function add(y){
+//         return x+y
+//     }
+// }
 
-function doAdd(x){
-    return function add(y){
-        return x+y
-    }
-}
+// let add5= doAdd(5);
+// console.log(add5(50))
 
-let add5= doAdd(5);
-console.log(add5(50))
+// let add50= doAdd(50);
+// console.log(add50(50))
 
-let add50= doAdd(50);
-console.log(add50(50))
+*/
+
+// Memory location
+
+// (primitive data type)
+let a = 100;
+
+let b = a;
+b=40;
+
+console.log(a);
+console.log(b);
+
+// (Reference data type)
+
+let C = {name:"Rajan ",age : 18}
+let D = C;
+
+D.age = 20;
+C.name = "Aravinth"
+console.log(C)
+console.log(D)
