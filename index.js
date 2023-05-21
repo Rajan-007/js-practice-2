@@ -165,7 +165,7 @@ console.log(Joined);
 // let add50= doAdd(50);
 // console.log(add50(50))
 
-*/
+
 
 // Memory location
 
@@ -187,3 +187,26 @@ D.age = 20;
 C.name = "Aravinth"
 console.log(C)
 console.log(D)
+*/
+
+// Set
+
+let arr = [1,2,3,4,5,5,4,7,7,9,89,0]
+let myset1= new Set(arr);
+console.log(arr)
+console.log(myset1)
+
+let myset2 = new Set();
+myset2.add(4)
+myset2.add(4)
+myset2.add(6)
+myset2.add(7)
+myset2.add({name : "Rajan",Age : 21})
+myset2.add("ert")
+console.log (myset2)
+console.log (myset2.has(5))
+console.log (myset2.size)
+console.log (myset2.delete(6))
+
+let arr2 = Array.from(myset2)
+console.log( arr2)
