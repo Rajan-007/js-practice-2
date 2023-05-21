@@ -210,3 +210,26 @@ console.log (myset2.delete(6))
 
 let arr2 = Array.from(myset2)
 console.log( arr2)
+
+// Map
+
+let map1 = new Map()
+map1.set('a',2)
+map1.set('a',3)
+map1.set('b',1)
+console.log(map1)
+console.log(map1.size)
+console.log(map1.has(4))
+
+for(let i of map1){
+    console.log(i)
+}
+
+for(let k of map1.keys()){
+    console.log(k)
+}
+
+for(let v of map1.values()){
+    console.log(v)
+}
+
