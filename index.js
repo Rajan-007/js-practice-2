@@ -187,7 +187,7 @@ D.age = 20;
 C.name = "Aravinth"
 console.log(C)
 console.log(D)
-*/
+
 
 // Set
 
@@ -233,3 +233,16 @@ for(let v of map1.values()){
     console.log(v)
 }
 
+*/
+
+// Asynchronous function 
+
+console.log("step 1")
+console.log("step 2")
+console.log("step 3")
+
+setTimeout(()=> console.log("step 1"),4000)
+setTimeout(()=> console.log("step 2"),2000)
+setTimeout(()=> console.log("step 3"),1000)
+
+console.log("Byee")
