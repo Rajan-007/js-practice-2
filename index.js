@@ -237,12 +237,22 @@ for(let v of map1.values()){
 
 // Asynchronous function 
 
-console.log("step 1")
-console.log("step 2")
-console.log("step 3")
+console.log("Asynchronous function")
+function sync(){
+    console.log("step 1")
+    console.log("step 2")
+    console.log("step 3")
+}
+let a = 300;
+b = 389;
+sync()
 
 setTimeout(()=> console.log("step 1"),4000)
 setTimeout(()=> console.log("step 2"),2000)
 setTimeout(()=> console.log("step 3"),1000)
 
 console.log("Byee")
+for (i=0;i<=1000;i++){
+    console.log(i)
+    console.log(i**2)
+}
