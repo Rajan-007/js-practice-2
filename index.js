@@ -256,3 +256,8 @@ for (i=0;i<=1000;i++){
     console.log(i)
     console.log(i**2)
 }
+
+// setInterval 
+// It is used for repeating functions
+
+setInterval(()=> console.log("Hello world!"),3000)
