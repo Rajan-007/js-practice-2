@@ -233,7 +233,7 @@ for(let v of map1.values()){
     console.log(v)
 }
 
-*/
+
 
 // Asynchronous function 
 
@@ -261,3 +261,35 @@ for (i=0;i<=1000;i++){
 // It is used for repeating functions
 
 setInterval(()=> console.log("Hello world!"),3000)
+
+
+
+
+for (var i = 0; i < 3; i++) {
+    console.log(i);
+  }
+  
+  console.log(i);
+
+  */
+//  Promises
+
+  const tatkalBook = new Promise((resolve,reject)=>{
+    let booking = true 
+    if (booking)
+        resolve()
+    else
+        reject()
+})
+
+tatkalBook.then(success)
+.catch(failure)
+
+function success(){
+    console.log(" Thanks buddy! ")
+
+}
+function failure(){
+    console.log(" Thanks for trying ")
+
+}
