@@ -274,7 +274,7 @@ for (var i = 0; i < 3; i++) {
   */
 //  Promises
 
-  const tatkalBook = new Promise((resolve,reject)=>{
+const tatkalBook = new Promise((resolve,reject)=>{
     let booking = true 
     if (booking)
         resolve()
@@ -282,14 +282,6 @@ for (var i = 0; i < 3; i++) {
         reject()
 })
 
-tatkalBook.then(success)
-.catch(failure)
-
-function success(){
-    console.log(" Thanks buddy! ")
-
-}
-function failure(){
-    console.log(" Thanks for trying ")
-
-}
+tatkalBook.then(()=>console.log(" Thanks buddy! ")
+)
+.catch(()=>console.log(" Thanks for trying "))
